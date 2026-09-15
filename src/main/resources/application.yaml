@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ms-andesstay-bff
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://sts.windows.net/6f522bef-27e2-4548-89e6-c1717b61ae20/
+
+server:
+  port: 8080
