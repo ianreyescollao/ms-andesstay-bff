@@ -17,4 +17,9 @@ public class TestController {
     public String privateTest() {
         return "Endpoint protegido funcionando";
     }
+
+    @GetMapping("/admin/test")
+    public String adminTest() {
+        return "Endpoint ADMIN funcionando";
+    }
 }
