@@ -7,10 +7,18 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: https://sts.windows.net/6f522bef-27e2-4548-89e6-c1717b61ae20/
+          audiences:
+            - api://2e944832-1ef3-4333-be87-e6e795119ba2
+
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.security.oauth2: DEBUG
 
 server:
   port: 8080
 
 services:
   catalog:
-    url: http://172.31.27.6:8081
+    url: http://localhost:8081
