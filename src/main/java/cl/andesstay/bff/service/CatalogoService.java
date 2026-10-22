@@ -21,7 +21,7 @@ public class CatalogoService {
     public String obtenerCatalogo() {
         return restClient
                 .get()
-                .uri("/api/catalog")
+                .uri("/api/catalog/units")
                 .retrieve()
                 .body(String.class);
     }
